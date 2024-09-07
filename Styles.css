@@ -1,0 +1,197 @@
+/*Documentação da estilização do CSS para um site sobre MPOX*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Define que todas as margens e preenchimentos são zero e que o box-sizing é border-box para todos os elementos */
+}
+
+/* Estiliza o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    display: flex; /* Usa flexbox para o layout */
+    flex-direction: column; /* Define a direção dos itens flexíveis como coluna */
+    min-height: 100vh; /* Define a altura mínima como 100% da altura da viewport */
+    margin: 0; /* Remove a margem padrão */
+    background-image: url('hospital.jpg'); /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem de fundo cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+/* Estiliza o cabeçalho */
+header {
+    display: flex; /* Usa flexbox para o layout */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: flex-end; /* Alinha os itens ao final do eixo cruzado */
+    padding: 10px 20px; /* Adiciona preenchimento*/
+    background: linear-gradient(to right, #72110e, #b63c33, #e0e0e0); /* Define um gradiente de fundo */
+
+}
+
+/* Estiliza o logo */
+#logo {
+    background-image: url('Banner.png'); /* Define a imagem de fundo */
+    background-size: contain; /* Ajusta a imagem para caber no contêiner */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    width: 120px; /* Define a largura */
+    height: 70px; /* Define a altura */
+    flex-shrink: 0; /* Evita que o logo encolha */
+}
+
+/* Estiliza o contêiner de links de navegação */
+#guia-links {
+    display: flex; /* Usa flexbox para o layout */
+    justify-content: center; /* Centraliza os itens */
+    align-items: center; /* Alinha os itens ao centro do eixo cruzado */
+    width: 100%; /* Define a largura como 100% */
+}
+
+/* Estiliza a lista de navegação */
+#guia-links nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Usa flexbox para o layout */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+/* Estiliza os itens da lista de navegação */
+#guia-links nav ul li {
+    margin: 0 15px; /* Adiciona margem entre os itens */
+}
+
+/* Estiliza os links de navegação */
+#guia-links nav ul li a {
+    text-decoration: none; /* Remove a decoração do texto */
+    color: #f9fafc; /* Define a cor do texto */
+}
+
+/* Estiliza os links de navegação ao passar o mouse */
+#guia-links nav ul li a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza o contêiner de pesquisa */
+#conjunto-pesquisa{
+    display: flex; /* Usa flexbox para o layout */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    align-items: flex-end; /* Alinha os itens ao final do eixo cruzado */
+     width: 25%; /* Define a largura como 25% */
+}
+
+/* Estiliza a barra de pesquisa */
+#barra-pesquisa {
+    width: 100%; /* Define a largura como 100% */
+    padding: 5px; /* Adiciona preenchimento */
+    margin-bottom: 5px; /* Adiciona margem inferior */
+    border-radius: .5rem; /* Define o raio da borda */
+    margin-bottom: 0.3rem; /* Adiciona margem inferior */
+    font-size: 1rem; /* Define o tamanho da fonte */
+} 
+
+/* Estiliza o input da barra de pesquisa */
+#barra-pesquisa input {
+    padding: 8px; /* Adiciona preenchimento */
+    font-size: 16px; /* Define o tamanho da fonte */
+    margin-bottom: 3px; /* Adiciona margem inferior */
+    width: 100%; /* Define a largura como 100% */
+    max-width: 290px; /* Define a largura máxima */
+    border-radius: 10px; /* Define o raio da borda */
+}
+
+/* Estiliza os botões de busca */
+#botoes-busca {
+    display: flex; /* Usa flexbox para o layout */
+    justify-content: flex-end; /* Alinha os itens ao final do eixo principal */
+    width: 100%; /* Define a largura como 100% */
+    border-radius: 90px; /* Define o raio da borda */
+}
+
+/* Estiliza os botões */
+button {
+    padding: 5px 30px; /* Adiciona preenchimento */
+    margin-left: 5px; /* Adiciona margem à esquerda */
+}
+
+/* Estiliza a barra de menu */
+#barra-menu {
+    background-color: #D3D3D3; /* Define a cor de fundo */
+    text-align: center; /* Centraliza o texto */
+    padding: 5px 0; /* Adiciona preenchimento */
+}
+
+/* Estiliza a lista de menu */
+#menu ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    margin: 0; /* Remove a margem */
+    padding: 0; /* Remove o preenchimento */
+    display: flex; /* Usa flexbox para o layout */
+    justify-content: center; /* Centraliza os itens */
+}
+
+/* Estiliza os itens da lista de menu */
+#menu li {
+    margin: 0 10px; /* Adiciona margem entre os itens */
+}
+
+/* Estiliza os botões do menu */
+#menu button {
+    padding: 10px 80px; /* Adiciona preenchimento */
+    border: none; /* Remove a borda */
+    background-color: #b63c33; /* Define a cor de fundo */
+    color: #fff; /* Define a cor do texto */
+    border-radius: 8px; /* Define o raio da borda */
+    cursor: pointer; /* Define o cursor como ponteiro */
+}
+
+/* Estiliza os botões do menu ao passar o mouse */
+#menu button:hover {
+    background-color: #72110e; /* Define a cor de fundo ao passar o mouse */
+}
+
+/* Estiliza o elemento principal */
+main {
+    display: flex; /* Usa flexbox para o layout */
+    flex: 1; /* Permite que o elemento cresça */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    padding: 20px; /* Adiciona preenchimento */
+}
+
+/* Estiliza a área de conteúdo */
+#area-conteudo {
+    display: flex; /* Usa flexbox para o layout */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    flex: 1; /* Permite que o elemento cresça */
+    padding: 20px; /* Adiciona preenchimento */
+    background-color: rgba(230, 212, 212, 0.8); /* Define a cor de fundo com opacidade */
+    border: 1px solid rgba(218, 150, 150, 0.8); /* Define a borda com opacidade */
+    width: 100%; /* Define a largura como 100% */
+    max-width: 1800px; /* Define a largura máxima */
+    height: 100%; /* Define a altura como 100% */
+    max-height: 600px; /* Define a altura máxima */
+    opacity: 0.9; /* Define a opacidade */
+}
+
+/* Estiliza o iframe dentro da área de conteúdo */
+#area-conteudo iframe {
+    flex: 1; /* Permite que o elemento cresça */
+    width: 100%; /* Define a largura como 100% */
+    height: 100%; /* Define a altura como 100% */
+    border: none; /* Remove a borda */
+}
+
+/* Define a opacidade para header, footer e barra de menu */
+header, footer, #barra-menu {
+    opacity: 0.9; /* Define a opacidade */
+} 
+
+/* Estiliza o rodapé */
+footer {
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Adiciona preenchimento */
+    background-color: #c7b5b5; /* Define a cor de fundo */
+    position: fixed; /* Fixa o rodapé na parte inferior */
+    width: 100%; /* Define a largura como 100% */
+    bottom: 0; /* Posiciona o rodapé na parte inferior */
+}
